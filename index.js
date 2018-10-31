@@ -18,7 +18,7 @@ _.forEach(Array.from(year.by('months')), month => {
     let monthRange = month.range('month')
     let firstDay = monthRange.start.day()
 
-    //console.log(firstDay)
+    console.log(firstDay)
 
     //Create an array of  days in the month - use Array.from(monthRange.by('days'))
     let days= Array.from(monthRange.by('days'))
@@ -31,13 +31,17 @@ _.forEach(Array.from(year.by('months')), month => {
         
             let date = day.format('date') // TODO: Change this to output a two-digit date use day.format()
             
-            // TODO: Highlight September 10th in color         
+            // TODO: Highlight September 10th in color 
+           let chalk = require("chalk");
+            console.log(chalk.green());
+
             // TODO: Highlight YOUR birthday in color!
-                if(day.month() == 0 && day.date() == 19) {
+            function myBirthday() {
+                if(day.month() == 8 && day.date() == 31) {
                     date = chalk.bgRed(date)
                     
-                }//my birthday
-                
+                }myBirthday();
+            }
                 
 
                 return _.padEnd(date, 2)  
@@ -45,8 +49,10 @@ _.forEach(Array.from(year.by('months')), month => {
     
         
             //TODO: create a for() loopthat loops through month.day()
+            
             {
                 //TODO: Append blank spaces (using paddedDays.unshift('  ')) so that the 1st ends up under the right day column 
+                paddedDays.unshift(' ');
             }
             
                 
