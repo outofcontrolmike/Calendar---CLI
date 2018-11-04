@@ -1,0 +1,32 @@
+{
+  "name": "calendar---cli",
+  "version": "1.0.0",
+  "description": "Loads of fun",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "moment-range": "^4.0.1",
+    "npm": "^6.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outofcontrolmike/Calendar---CLI.git"
+  },
+  "keywords": [
+    "Lodash",
+    "Moment",
+    "MomentRange"
+  ],
+  "author": "Michael A. Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/outofcontrolmike/Calendar---CLI/issues"
+  },
+  "homepage": "https://github.com/outofcontrolmike/Calendar---CLI#readme"
+}
